@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.navBtn1 {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  text-align: center;
+}
+.navBtn1 .bar {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: inherit;
+  height: 2px;
+  background: #555;
+  transition: transform .3s ease,  top .3s ease, left .3s ease;
+  -webkit-transition: transform .3s ease,  top .3s ease, left .3s ease;
+  -moz-transition: transform .3s ease,  top .3s ease, left .3s ease;
+}
+.navBtn1 .bar:nth-of-type(1) {
+  top: 5px;
+}
+.navBtn1 .bar:nth-of-type(2) {
+  opacity: 1;
+  transition: opacity .1s ease .125s, left .2s ease;
+  -webkit-transition: opacity .1s ease .125s, left .2s ease;
+  -moz-transition: opacity .1s ease .125s, left .2s ease;
+}
+.navBtn1 .bar:nth-of-type(3) {
+  top: 25px;
+}
+.navBtn1.open .bar:nth-of-type(1) {
+  top: 15px;
+  transform: translateY(0) rotate(45deg);
+  -webkit-transform: translateY(0) rotate(45deg);
+  -moz-transform: translateY(0) rotate(45deg);
+}
+.navBtn1.open .bar:nth-of-type(2) {
+  opacity: 0;
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+}
+.navBtn1.open .bar:nth-of-type(3) {
+  top: 15px;
+  transform: translateY(0) rotate(-45deg);
+  -webkit-transform: translateY(0) rotate(-45deg);
+  -moz-transform: translateY(0) rotate(-45deg);
+}
+.navBtn1:hover .bar:nth-of-type(2) {
+  left: 5px;
+}
+
+
+.t_navbar {
+  background: #f5f5f5;
+  position: fixed;
+  top 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  height: 40px;
+}
+.t_navbar a {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+.navbar {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  border-radius: 0 0 15px 15px;
+  background: inherit;
+}
+.navbar-toggler {
+  border: 0 solid transparent;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+.navbar .favorite,.nav_cart {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+.navbar .favorite img,.nav_cart img {
+  width: 25px;
+}
+.navbar .favorite:hover,.nav_cart:hover {
+  background: #e5e5e5;
+  border-radius: 50%;
+}
