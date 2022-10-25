@@ -44,8 +44,8 @@ iframe {
 }
 h2 {
   font-weight: 800;
-  line-height: 3;
-  font-size: 3em;
+  font-size: 3.5em;
+  margin: 40px 0 40px;
 }
 .tb_1 {
   width: 75%;
@@ -56,17 +56,17 @@ h2 {
   margin-bottom: 3em;
 }
 .tb_2 {
-  width: 30%;
+  width: 61%;
   margin: auto;
   text-align: center;
 }
 .tb_3 {
   display: inline-block;
   position: absolute;
-  top: 15%;
-  left: 10%;
-  width: 40%;
+  color: #eee;
+  bottom: 10%;
+  left: 5%;
+  width: 50%;
   font-weight: 600;
-  
 }
 

@@ -21,17 +21,18 @@
 }
 
 /** snkrs **/
+.card_wrap, .card {
+  padding: 0;
+  margin: 0 auto;
+}
+.card {
+  margin-bottom: 30px;
+}
 .card-title {
   color: #ff0017;
 }
 .card-text span {
   color: #757575;
-}
-.card_wrap {
-  overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 20px;
 }
 .card-img, .card-img-bottom, .card-img-top {
   height: 100%;
@@ -63,12 +64,12 @@
 }
 
 /** apps **/
-.apps h5 {
-  font-size: 3em;
-  font-weight: 600;
-}
-.nike_app, .club_app  {
+.nikeApp, .clubApp  {
   position: relative;
+}
+.nikeApp p, .clubApp p {
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 
