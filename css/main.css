@@ -3,11 +3,11 @@ main {
   margin-bottom: 100px;
 }
 /** force **/
-.main_visual video {
+.main_visual iframe {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  padding-top: 140px;
+  margin-top: 140px;
 }
 /** ntcXdance **/
 
